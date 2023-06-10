@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  
+}
+h1{
+    display: none;
+}
+
+main{
+    height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    background-color: #111;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+
+.nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-icons{
+    display: flex;
+    gap:30px;
+    cursor: pointer;
+}
+
+
+.main--title img{
+    width: 40%;
+}
+
+.main--description{
+    width: 40%;
+    margin-left: 10px;
+    padding-bottom: 30px;
+    color: gray;
+}
+
+.main--vertical{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 10%, transparent 90%);
+    margin-bottom: -150px;
+}
+
+.main--horizontal{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 30%, transparent 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-bottom: 150px;
+    padding-top: 70px;
+}
+
+.main--buttons{
+    margin-top: 15px;
+}
+
+.main--watchbutton, .main--infobutton {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right:10px;
+    opacity: 1;
+    transition: all ease 0.2s;
+}
+
+.main--infobutton{
+    background-color: gray;
+}
+
+.main--watchbutton:hover, .main--infobutton:hover{
+    opacity: 0.7;
+}
+
+.mainMovies{
+    margin-bottom: 60px;
+}
+
+.mainMovies--title{
+    margin:0px 0px 0px 30px;
+}
+
+.mainMovies--listarea{
+    overflow-x: hidden;
+    padding-left: 30px;
+}
+
+.mainMovies--list{
+    display: flex;
+    cursor: pointer;
+}
+.mainMovies--item{
+    display: inline-block;
+}
+
+.mainMovies--item img{
+    width: 99%;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+    margin-bottom: 50px;
+}
+
+.mainMovies--item img:hover{
+    transform: scale(1);
+}
+
+.mainTop{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mainTop--title{
+    margin:0px 0px 30px 30px;
+}
+
+.mainTop--list{
+    display: flex;
+    width: 250px * 10;
+    padding-left: 30px;
+    gap: 30px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.mainTop--item{
+    display:flex;
+    width: 100%;
+}
+
+.mainTop--list::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+/*
+.mainTop--item img{
+    
+}
+
+.mainTop--item img:nth-child(1){
+    
+}
+*/
+
+.mainTop--item img:nth-child(2){
+    margin-left: -20px;
+}
+
+.test{
+    height: 100vh;
+}
+
+.mainTop--left,
+.mainTop--right{
+    position: absolute;
+    width: 40px;
+    height: 255px;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.mainTop--left{
+    left: 0;
+}
+
+.mainTop--right{
+    right: 0;
+}
+
+.mainTop:hover .mainTop--left,
+.mainTop:hover .mainTop--right{
+    opacity: 1;
+}
+
+footer p{
+    margin-top: 55rem ;
+    text-align: center;
+    padding: 30px;
+
+}
+
+footer p a{
+    text-decoration: none;
+    color: red;
+}
+
+.hover-text {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+}
+
+.hover-text:hover{
+    font-size: 15px;
+}
+
+.hover-text.show {
+  opacity: 1;
+}
+
+@media (max-width: 760px){
+
+    body{
+        display: none;
+    }
+
+}
